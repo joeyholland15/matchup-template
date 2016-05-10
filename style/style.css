@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Geneva, sans-serif;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  width: 100%;
+  height: 50px;
+  background-color: beige;
+}
+
+.menu {
+  height: 100%;
+  margin-left: 2%;
+}
+
+.options, .col {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.image {
+  vertical-align: middle;
+}
+
+.text {
+  line-height: 50px;
+  margin: 0 4% 0 4%;
+}
+
+.col-container {
+  height: 85vh;
+  /*margin: 0%;*/
+/*  background: red;
+  background: radial-gradient(silver, black);*/
+}
+
+.col {
+  display: inline-block;
+  margin: 1%;
+  border: 2px solid black;
+}
+
+.main {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  vertical-align: top;
+  width: 75%;
+  height: 100%;
+}
+
+.roster {
+  overflow: scroll;
+}
+
+.team-list {
+  width: 20%;
+  height: 100%;
+/*  background: red;
+  background: radial-gradient(silver, black);*/
+}
+
+/*.player-title {
+  height: 10%;
+}
+
+.data {
+  height: 100%;
+}
+
+.data li {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  line-height: 50px;
+}
+
+#marcus {
+  display: block;
+  height: 88%;
+  width: 100%
+}*/
+
+.matchup-container {
+  height: 80%;
+  width: 100%;
+}
+
+.matchup {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.away {
+/*  background-color: red;*/
+}
+
+.home {
+/*  background-color: green;*/
+}
+
+.versus {
+  display: inline-block;
+  width: 10%;
+  height: 100%;
+  vertical-align: top;
+  text-align: center;
+  line-height: 100px;
+/*  background-color: orange;*/
+}
+
+.score {
+  text-align: center;
+  padding-top: 1%;
+  height: 20%;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 11%;
+}
+
+.team {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  line-height: 100px;
+  width: 22.5%;
+/*  background-color: yellow;*/
+}
+
+.points {
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  height: 100%;
+  line-height: 100px;
+  width: 9.5%;
+  font-size: 2em;
+/*  background-color: lightgreen;*/
+}
+
+.vs {
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  border: 1px solid black;
+}
+
+.away-logo {
+  background-image: url("../images/stanford.png");
+}
+
+.home-logo {
+  background-image: url("../images/oregon.png");
+}
+
+.side-col {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  background-color: orange;
+}
+
+.side-row {
+  height: 20%;
+  width: 100%;
+  background-color: beige;
+  border: 1px solid black;
+  background-size: 100% 100%;
+}
+
+.side-row:hover {
+  background-color: lightgreen;
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+}
+
+.side-row:active {
+  background-color: green;
+}
+
+#sec {
+  background-image: url("../images/sec.png");
+}
+
+#pac {
+  background-image: url("../images/pac12.png");
+}
+
+#big12 {
+  background-image: url("../images/big12.gif");
+}
+
+#b1g {
+  background-image: url("../images/b1g.png");
+}
+
+#acc {
+  background-image: url("../images/acc.png");
+}
+
+#aac {
+  background-image: url("../images/aac.png");
+}
+
+#cusa {
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/cusa.gif");
+}
+
+#mac {
+  background-image: url("../images/mac.gif");
+}
+
+#mwc {
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/mwc.png");
+}
+
+#nd {
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/nd.png");
+}
+
+.player-row {
+  background-color: beige;
+  margin: .5%;
+  padding: 1% 0;
+  border-radius: 5px;
+}
+
+.header-row {
+  background-color: beige;
+  margin: .5%;
+  padding: 1% 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.player-row:hover {
+  background-color: lightgreen;
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+}
+
+.player-row:active {
+  background-color: green;
+}
+
+.player-attr {
+  display: inline-block;
+}
+
+.jersey-no, .position, .year, .height, .weight .team-header-logo {
+  width: 5%;
+  text-align: center;
+}
+
+.salary {
+  width: 8%;
+  text-align: center;
+}
+
+.team-header-logo {
+  background-image: url("../images/alabama.png");
+  background-position: 100% 100%;
+}
+
+.player-name {
+  width: 20%;
+}
+
+.player-img {
+  height: 100%;
+  width: 120%;
+}
+
+.stat-row {
+  text-align: center;
+  background-color: beige;
+  margin: .5%;
+  padding: .5% 0;
+  border-radius: 5px;
+}
+
+.stat-attr {
+  display: inline-block;
+}
+
+.row-sm {
+  width: 6%;
+}
+
+.row-med {
+  width: 10%;
+}
+
+.row-big {
+  width: 20%;
+}
+
+.player-header {
+  width: 100%;
+  height: 35%;
+  padding-top: 3%;
+}
+
+.player-title {
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 5%; 
+}
+
+.player-info {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+
+.info {
+  vertical-align: top;
+  font-size: 30px;
+  height: 100%;
+  line-height: 100%;
+  width: 33%;
+  display: inline-block;
+  padding-top: 8%;
+}
+
+.team-logo {
+  background-image: url('../images/clemson.png');
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-no {
+  border-right: 1px solid black;
+}
+
+.header-pos {
+  border-left: 1px solid black;
+}
+
+.player-menu-container {
+  height: 65%;
+  width: 100%;
+}
+
+.player-menu-col {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+.player-menu-row {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 30.75%;
+  background-color: orange;
+  border-radius: 10px;
+  padding-top: 35%;
+}
+
+.menu-left {
+  margin: 5% 3% 5% 6.5%;
+}
+
+.menu-right {
+  margin: 5% 6.5% 5% 3%;
+}
+
+.player-menu-row:hover {
+  background-color: orangered;
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+}
+
+.player-menu-row:active {
+  background-color: green;
+}
+
+.pec-box {
+  height: 40%;
+  width: 100%;
+}
+
+.pec-breakdown {
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  padding-top: 4%;
+}
+
+.pec-total {
+  display: inline-block;
+  height: 100%;
+  width: 40%;
+  vertical-align: top;
+  text-align: center;
+  font-size: 200%;
+  padding-top: 5%;
+  padding-right: 5%;
+}
+
+.pec-data {
+  width: 100%;
+  height: 30%;
+  font-size: 14px;
+  font-style: italic;
+  padding-left: 5%;
+}
+
+.player-card {
+  background: red;
+  background: linear-gradient(beige, white);
+}
+
+.team-recent {
+  background-color: lightgreen;
+}
+
+
+
