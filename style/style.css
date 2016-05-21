@@ -24,7 +24,6 @@ a {
 
 .options, .col {
   display: inline-block;
-  cursor: pointer;
 }
 
 .image {
@@ -59,6 +58,18 @@ a {
   vertical-align: top;
   width: 75%;
   height: 100%;
+}
+
+.team-content {
+  background-color: green;
+}
+
+.player-content {
+  background-color: orange;
+}
+
+.matchup-content {
+  background-color: blue;
 }
 
 .roster {
