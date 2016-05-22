@@ -8,6 +8,7 @@ class Team extends Component {
       <div className="col-container team-container">
         <ConferenceMenu />
         <div className="content col team-content">
+          Maybe a list of selectable current top 25 as default?
         </div>
       </div>
     )

@@ -7,7 +7,7 @@ export default class ConferenceMenu extends Component {
     return (
       <aside className="team-list col">
         <div className="side-col">
-          <Link to='/conferences/sec'><div className="side-row" id="sec"></div></Link>
+          <Link to='/teams/sec'><div className="side-row" id="sec"></div></Link>
           <div className="side-row" id="pac"></div>
           <div className="side-row" id="big12"></div>
           <div className="side-row" id="b1g"></div>
