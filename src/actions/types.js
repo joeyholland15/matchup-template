@@ -1,0 +1,1 @@
+export const FETCH_TEAM_RANKINGS = 'fetch_team_rankings'
