@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import ConferenceMenu from '../side/conference_menu'
 
 class Team extends Component {
   render() {
     return (
       <div className="col-container team-container">
-        <div className="content team-content">
+        <ConferenceMenu />
+        <div className="content col team-content">
         </div>
       </div>
     )

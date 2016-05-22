@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import PlayerCard from '../side/player_card'
 
 class Player extends Component {
   render() {
     return (
       <div className="col-container player-container">
-        <div className="content player-content">
+        <PlayerCard />
+        <div className="content col player-content">
         </div>
       </div>
     )

@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import MatchupMenu from '../side/matchup_menu'
 
 class Matchup extends Component {
   render() {
     return (
-      <div className="col-container matchup-container">
-        <div className="content matchup-content">
+      <div className="col-container">
+        <MatchupMenu />
+        <div className="content col">
         </div>
       </div>
     )
