@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import teams from './team_reducer'
+import rankings from './team_reducer'
 
 const rootReducer = combineReducers({
-  teams
+  rankings
 });
 
 export default rootReducer;

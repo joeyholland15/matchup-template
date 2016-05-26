@@ -9,17 +9,17 @@ class Team extends Component {
   }
 
   componentWillMount() {
+    //default call to fetchTeamRankings
     this.props.fetchTeamRankings()
   }
 
   render() {
-    console.log('PROPS', this.props)
     return (
       <div className="col-container team-container">
         <ConferenceMenu />
         <div className="content col team-content">
-          {this.props.teams.map((team, i) =>
-            <div key={i} team={team}>{team.team}</div>
+          {this.props.rankings.map((team, i) =>
+            <div key={i} team={team}>{team.rank} {team.team}</div>
           )}
         </div>
       </div>
@@ -31,10 +31,8 @@ class Team extends Component {
 function mapStateToProps (state) {
   //return object of what you want to pass to component as a prop
   return {
-    teams: state.teams
+    rankings: state.rankings
   }
 }
-
-// export default connect(null, {})(Navbar)
 
 export default connect(mapStateToProps, {fetchTeamRankings})(Team)
