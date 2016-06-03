@@ -1,4 +1,4 @@
-export default const conferences = {
+const conferenceList = {
   'SEC': {
     'west': [
       'Alabama',
@@ -58,7 +58,7 @@ export default const conferences = {
     ]
   },
   'BIG_12': {
-    [
+    'all': [
       'Oklahoma',
       'TCU',
       'Oklahoma State',
@@ -107,3 +107,5 @@ export default const conferences = {
 
   }
 }
+
+export default conferenceList

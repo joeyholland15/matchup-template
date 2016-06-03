@@ -1,9 +1,10 @@
 import { connect } from 'react-redux'
+import { setConferenceFilter } from '../../actions'
+import ConferenceLink from '../content/conference_link'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    //need to define these things 
-    active: ownProps.conference === state.activeConference
+    activeConference: ownProps.conference === state.activeConference
   }
 }
 
@@ -15,10 +16,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 }
 
-//connect the component down here
 const FilterConference = connect(
   mapStateToProps,
   mapDispatchToProps
-)(//name of component)
+)(ConferenceLink)
 
 export default FilterConference

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-//TODO: change these to the appropriate side component and action
 import TeamMenu from '../side/team_menu'
-//import { fetchTeamRankings } from '../../actions'
+import conferenceList from '../../helpers/conference_listings'
+import _ from 'underscore'
 
 class ConferenceDash extends Component {
   constructor(props) {
@@ -19,8 +19,12 @@ class ConferenceDash extends Component {
       <div className="col-container team-container">
         <TeamMenu />
         <div className="content col team-content">
-          Testing ConferenceDash. This should have columns for team standings on the left main
-          part of the content box and a league leader container on the right
+          {conferenceList[this.props.activeConference]['west'].map((team, i) => {
+            return <div key={i} team={team}>{team}</div>
+          })}
+          {conferenceList[this.props.activeConference]['east'].map((team, i) => {
+            return <div key={i} team={team}>{team}</div>
+          })}
         </div>
       </div>
     )
@@ -28,7 +32,11 @@ class ConferenceDash extends Component {
 }
 
 function mapStateToProps (state) {
-  //TODO: think about what you want to do here
+  return {
+    activeConference: state.activeConference
+  }
 }
 
-export default ConferenceDash
+export default connect(
+  mapStateToProps
+)(ConferenceDash)

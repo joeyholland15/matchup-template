@@ -10,3 +10,10 @@ export function fetchTeamRankings() {
     payload: request
   }
 }
+
+export function setConferenceFilter(conference) {
+  return {
+    type: actions.SET_CONFERENCE_FILTER,
+    conference
+  }
+}

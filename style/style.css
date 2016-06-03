@@ -183,7 +183,6 @@ a {
   display: inline-block;
   height: 100%;
   width: 50%;
-  background-color: orange;
 }
 
 .side-row {
@@ -205,49 +204,49 @@ a {
   background-color: green;
 }
 
-#sec {
+#SEC {
   background-image: url("../images/sec.png");
 }
 
-#pac {
+#PAC_12 {
   background-image: url("../images/pac12.png");
 }
 
-#big12 {
+#BIG_12 {
   background-image: url("../images/big12.gif");
 }
 
-#b1g {
+#B1G {
   background-image: url("../images/b1g.png");
 }
 
-#acc {
+#ACC {
   background-image: url("../images/acc.png");
 }
 
-#aac {
+#AAC {
   background-image: url("../images/aac.png");
 }
 
-#cusa {
+#USA {
   background-size: 90% 90%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/cusa.gif");
 }
 
-#mac {
+#MAC {
   background-image: url("../images/mac.gif");
 }
 
-#mwc {
+#MWC {
   background-size: 90% 90%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/mwc.png");
 }
 
-#nd {
+#IND {
   background-size: 90% 90%;
   background-repeat: no-repeat;
   background-position: center;

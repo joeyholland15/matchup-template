@@ -1,4 +1,11 @@
-import conferenceList from '../helpers/conference_listings'
+import { SET_CONFERENCE_FILTER } from '../actions/types'
 
-const INITIAL_STATE = conferenceList
+export default function(state = 'DASH', action) {
+  switch(action.type) {
+    case SET_CONFERENCE_FILTER:
+      return action.conference
+    default: 
+      return state
+  }
+}
 
