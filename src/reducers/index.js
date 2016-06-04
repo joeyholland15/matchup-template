@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import rankings from './team_reducer'
+import rankings from './ranking_reducer'
 import activeConference from './conference_reducer'
+import activeTeam from './team_reducer'
 
 const rootReducer = combineReducers({
   rankings,
-  activeConference
+  activeConference,
+  activeTeam
 });
 
 export default rootReducer;

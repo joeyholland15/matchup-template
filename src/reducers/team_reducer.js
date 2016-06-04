@@ -1,12 +1,10 @@
-import { FETCH_TEAM_RANKINGS } from '../actions/types'
+import { SET_TEAM_FILTER } from '../actions/types'
 
-const INITIAL_STATE = []
-
-export default function(state = INITIAL_STATE, action) {
+export default function(state = 'Oregon', action) {
   switch(action.type) {
-    case FETCH_TEAM_RANKINGS:
-      return action.payload.data
-    default:
+    case SET_TEAM_FILTER:
+      return action.team
+    default: 
       return state
   }
 }

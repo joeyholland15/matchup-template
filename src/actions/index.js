@@ -17,3 +17,11 @@ export function setConferenceFilter(conference) {
     conference
   }
 }
+
+export function setTeamFilter(team) {
+  console.log('TEAM', team)
+  return {
+    type: actions.SET_TEAM_FILTER,
+    team
+  }
+}
