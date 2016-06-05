@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import ConferenceMenu from '../side/conference_menu'
 import { fetchTeamRankings } from '../../actions'
 
-class Team extends Component {
+class Rankings extends Component {
   constructor(props) {
     super(props)
   }
@@ -35,4 +35,4 @@ function mapStateToProps (state) {
   }
 }
 
-export default connect(mapStateToProps, {fetchTeamRankings})(Team)
+export default connect(mapStateToProps, {fetchTeamRankings})(Rankings)

@@ -11,6 +11,14 @@ export function fetchTeamRankings() {
   }
 }
 
+export function fetchTeamRoster(team) {
+  const request = axios.get('http://localhost:8081/api/roster/' + team)
+  return {
+    type: actions.FETCH_TEAM_ROSTER,
+    payload: request
+  }
+}
+
 export function setConferenceFilter(conference) {
   return {
     type: actions.SET_CONFERENCE_FILTER,
@@ -19,7 +27,6 @@ export function setConferenceFilter(conference) {
 }
 
 export function setTeamFilter(team) {
-  console.log('TEAM', team)
   return {
     type: actions.SET_TEAM_FILTER,
     team

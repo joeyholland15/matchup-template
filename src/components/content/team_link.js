@@ -17,6 +17,7 @@ class TeamLink extends Component {
         className="side-row" 
         id={this.props.team}
       >
+      {this.props.team}
       </div></Link>
     )
   }

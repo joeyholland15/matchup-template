@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 import TeamMenu from '../side/team_menu'
 import { connect } from 'react-redux'
+import { fetchTeamRoster } from '../../actions'
+import teamIds from '../../helpers/scraping_data'
 
 class Team extends Component {
   constructor(props) {
     super(props)
+  }
+
+  componentWillMount() {
+    this.props.fetchTeamRoster(teamIds[this.props.activeTeam])
   }
 
   render () {
@@ -13,6 +19,9 @@ class Team extends Component {
         <TeamMenu />
         <div className="content col team-content">
           <div>{this.props.activeTeam}</div>
+          {this.props.teamRoster.map((player, i) => {
+            return <div key={i} player={player}>{player.name}</div>
+          })}
         </div>
       </div>
     )
@@ -21,12 +30,12 @@ class Team extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    activeTeam: state.activeTeam
+    activeTeam: state.activeTeam,
+    teamRoster: state.teamRoster
   }
 }
 
-export default connect(
-  mapStateToProps
-)(Team)
+
+export default connect(mapStateToProps, { fetchTeamRoster })(Team)
 
 
