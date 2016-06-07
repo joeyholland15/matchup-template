@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import TeamMenu from '../side/team_menu'
+import PlayerLink from '../containers/filter_player'
 import { connect } from 'react-redux'
 import { fetchTeamRoster } from '../../actions'
 import teamIds from '../../helpers/scraping_data'
+import { browserHistory } from 'react-router'
 
 class Team extends Component {
   constructor(props) {
@@ -20,7 +22,7 @@ class Team extends Component {
         <div className="content col team-content">
           <div>{this.props.activeTeam}</div>
           {this.props.teamRoster.map((player, i) => {
-            return <div key={i} player={player}>{player.name}</div>
+            return <PlayerLink key={i} player={player} />
           })}
         </div>
       </div>
@@ -34,7 +36,6 @@ const mapStateToProps = (state) => {
     teamRoster: state.teamRoster
   }
 }
-
 
 export default connect(mapStateToProps, { fetchTeamRoster })(Team)
 

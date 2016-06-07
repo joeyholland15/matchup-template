@@ -32,3 +32,11 @@ export function setTeamFilter(team) {
     team
   }
 }
+
+export function setPlayerFilter(player) {
+  console.log('dispatched correctly')
+  return {
+    type: actions.SET_PLAYER_FILTER,
+    player
+  }
+}

@@ -4,22 +4,24 @@ import PlayerCard from '../side/player_card'
 
 class Player extends Component {
   render() {
+    console.log('PLAYER PROPS', this.props)
     return (
       <div className="col-container player-container">
         <PlayerCard />
         <div className="content col player-content">
+          {this.props.activePlayer.name}
         </div>
       </div>
     )
   }
 }
 
-//takes in global state tree
 function mapStateToProps (state) {
-  //return object of what you want to pass to component as a prop
-
+  return {
+    activePlayer: state.activePlayer
+  }
 }
 
-// export default connect(null, {})(Navbar)
-
-export default Player
+export default connect(
+  mapStateToProps
+)(Player)

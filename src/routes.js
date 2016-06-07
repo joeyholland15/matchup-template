@@ -12,8 +12,8 @@ export default (
     <IndexRedirect to='/rankings' />
     <Route path='rankings' component={Rankings} />
     <Route path='conference' component={ConferenceDash} />
-    <Route path='players' component={Player} />
-    <Route path='matchups' component={Matchup} />
+    <Route path='player' component={Player} />
+    <Route path='matchup' component={Matchup} />
     <Route path='team' component={Team} />
   </Route>
 )
