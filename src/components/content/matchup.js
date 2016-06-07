@@ -8,6 +8,7 @@ class Matchup extends Component {
       <div className="col-container">
         <MatchupMenu />
         <div className="content col">
+          
         </div>
       </div>
     )

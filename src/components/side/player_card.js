@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { Component } from 'react'
 import { connect } from 'react-redux'
+import PlayerMenu from '../content/player_menu'
 
 class PlayerCard extends Component {
   render () {
@@ -23,18 +24,7 @@ class PlayerCard extends Component {
             */}<div className="pec-total">22.64</div>
           </div>
         </div>
-        <div className="player-menu-container">
-          <div className="player-menu-col">
-            <div className="player-menu-row menu-left">Stats</div>
-            <div className="player-menu-row menu-left">Logs</div>
-            <div className="player-menu-row menu-left">Notes</div>
-          </div>{/*
-          */}<div className="player-menu-col">
-            <div className="player-menu-row menu-right">Advanced</div>
-            <div className="player-menu-row menu-right">Highlights</div>
-            <div className="player-menu-row menu-right">Archive</div>
-          </div>
-        </div>
+        <PlayerMenu />
       </aside>
     )
   }
