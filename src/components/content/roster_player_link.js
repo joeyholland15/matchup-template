@@ -11,7 +11,7 @@ class PlayerLink extends Component {
     return (
       <Link to='/player' onClick={e => {
          e.preventDefault()
-         browserHistory.push('/player')
+         browserHistory.push('/player/profile')
          this.props.onClick()
        }}><div 
         id={this.props.player.name}

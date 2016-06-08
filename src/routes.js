@@ -12,13 +12,15 @@ import Logs from './components/content/player_menu/logs'
 import Highlights from './components/content/player_menu/highlights'
 import Notes from './components/content/player_menu/notes'
 import Archive from './components/content/player_menu/archive'
+import PlayerDash from './components/content/player_dash'
 
 export default (
   <Route path='/' component={App}>
     <IndexRedirect to='/rankings' />
     <Route path='rankings' component={Rankings} />
     <Route path='conference' component={ConferenceDash} />
-    <Route path='player' component={Player} />
+    <Route path='player' component={PlayerDash} />
+    <Route path='player/profile' component={Player} />
     <Route path='player/stats' component={Stats} />
     <Route path='player/advanced' component={Advanced} />
     <Route path='player/logs' component={Logs} />
