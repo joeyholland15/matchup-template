@@ -1,6 +1,7 @@
 const conferenceList = {
   'SEC': {
     'west': [
+      'West',
       'Alabama',
       'LSU',
       'Ole Miss',
@@ -10,6 +11,7 @@ const conferenceList = {
       'Texas A&M'
     ],
     'east': [
+      'East',
       'Florida',
       'Georgia',
       'Tennessee',
@@ -20,7 +22,8 @@ const conferenceList = {
     ]
   },
   'PAC_12': {
-    'north': [
+    'west': [
+      'North',
       'Oregon',
       'Stanford',
       'Oregon State',
@@ -28,7 +31,8 @@ const conferenceList = {
       'Washington',
       'Washington State'
     ],
-    'south': [
+    'east': [
+      'South',
       'Utah',
       'USC',
       'UCLA',
@@ -38,7 +42,8 @@ const conferenceList = {
     ]
   },
   'B1G': {
-    'east': [
+    'west': [
+      'East',
       'Ohio State',
       'Michigan State',
       'Michigan',
@@ -47,7 +52,8 @@ const conferenceList = {
       'Rutgers',
       'Maryland'
     ],
-    'west': [
+    'east': [
+      'West',
       'Iowa',
       'Northwestern',
       'Wisconsin',
@@ -58,7 +64,8 @@ const conferenceList = {
     ]
   },
   'BIG_12': {
-    'all': [
+    'west': [
+      'Big-12',
       'Oklahoma',
       'TCU',
       'Oklahoma State',
@@ -72,7 +79,8 @@ const conferenceList = {
     ]
   },
   'ACC': {
-    'atlantic': [
+    'west': [
+      'Atlantic',
       'Clemson',
       'Florida State',
       'Louisville',
@@ -81,7 +89,8 @@ const conferenceList = {
       'Wake Forest',
       'Boston College'
     ],
-    'coastal': [
+    'east': [
+      'Coastal',
       'North Carolina',
       'Pittsburgh',
       'Miami',

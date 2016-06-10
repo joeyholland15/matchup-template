@@ -25,6 +25,7 @@
   "dependencies": {
     "axios": "^0.11.1",
     "babel-preset-stage-1": "^6.1.18",
+    "dom-scroll-into-view": "^1.2.0",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-addons-create-fragment": "^15.1.0",

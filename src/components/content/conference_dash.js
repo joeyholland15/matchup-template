@@ -9,11 +9,6 @@ class ConferenceDash extends Component {
     super(props)
   }
 
-  componentWillMount() {
-    //TODO: think about any calls you may want to make
-    //this.props.fetchTeamRankings()
-  }
-
   render() {
     return (
       <div className="col-container team-container">

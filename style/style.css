@@ -64,7 +64,7 @@ a {
   background-color: orange;
 }
 
-.roster {
+.team-content {
   overflow: scroll;
 }
 
@@ -129,7 +129,7 @@ a {
 /*  background-color: orange;*/
 }
 
-.score {
+.matchup-scoreboard {
   text-align: center;
   padding-top: 1%;
   height: 20%;
@@ -287,7 +287,7 @@ a {
   display: inline-block;
 }
 
-.jersey-no, .position, .year, .height, .weight .team-header-logo {
+.row-small {
   width: 5%;
   text-align: center;
 }
@@ -302,7 +302,7 @@ a {
   background-position: 100% 100%;
 }
 
-.player-name {
+.row-large {
   width: 20%;
 }
 
@@ -365,7 +365,7 @@ a {
 }
 
 .team-logo {
-  background-image: url('../images/clemson.png');
+  background-image: url('../images/alabama.png');
   background-size: 50% 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -395,9 +395,10 @@ a {
   margin: 0 auto;
   width: 90%;
   height: 30.75%;
-  background-color: orange;
+  background-color: #A32638;
   border-radius: 10px;
   padding-top: 35%;
+  color: white;
 }
 
 .menu-left {

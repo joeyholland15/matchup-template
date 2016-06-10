@@ -20,7 +20,6 @@ class Team extends Component {
       <div className="col-container team-container">
         <TeamMenu />
         <div className="content col team-content">
-          <div>{this.props.activeTeam}</div>
           {this.props.teamRoster.map((player, i) => {
             return <PlayerLink key={i} player={player} />
           })}
