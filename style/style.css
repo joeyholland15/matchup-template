@@ -467,6 +467,13 @@ a {
   display: table;
 }
 
+.upcoming-dash-header {
+  height: 8%;
+  width: 100%;
+  text-align: center;
+  display: table;
+}
+
 .matchup-header-text {
   display: table-cell;
   vertical-align: middle;
@@ -515,7 +522,7 @@ a {
 .matchup-grid-item {
   display: table-cell;
   vertical-align: middle;
-  font-size: 1.6em;
+  font-size: 1.65em;
 }
 
 .matchup-dash-row {
@@ -525,7 +532,35 @@ a {
   text-align: center;
 }
 
+.upcoming-row {
+  font-size: .4em;
+  display: table;
+  height: 5%;
+  width: 94%;
+  margin: 2% 3%;
+  background-color: beige;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.upcoming-row:hover {
+  background-color: lightgreen;
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+}
+
+.upcoming-row:active {
+  background-color: green;
+  -webkit-transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  transition: background-color .5s ease-out;
+}
+
+.upcoming-list {
+  overflow-y: scroll;
+}
 
 
 

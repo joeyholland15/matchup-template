@@ -11,7 +11,9 @@ class MatchupDash extends Component {
   }
 
   componentWillMount() {
-    this.props.fetchUpcomingMatchups()
+    if(this.props.upcomingMatchups.length === 0) {
+      this.props.fetchUpcomingMatchups()
+    }
   }
 
   render() {
