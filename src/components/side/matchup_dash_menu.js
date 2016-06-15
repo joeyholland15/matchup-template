@@ -6,7 +6,9 @@ export default class MatchupMenu extends Component {
   render () {
     return (
       <aside className="team-list col">
-        List the matchups for the upcoming week here on the side. 
+        {this.props.matchups.map((matchup, i) =>
+          <div key={i} matchup={matchup}>{matchup.away} @ {matchup.home}</div>
+        )}
       </aside>
     )
   }

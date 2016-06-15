@@ -11,6 +11,14 @@ export function fetchTeamRankings() {
   }
 }
 
+export function fetchUpcomingMatchups() {
+  const request = axios.get('http://localhost:8081/api/matchups')
+  return {
+    type: actions.FETCH_UPCOMING_MATCHUPS,
+    payload: request
+  }
+}
+
 export function fetchTeamRoster(team) {
   const request = axios.get('http://localhost:8081/api/roster/' + team)
   return {

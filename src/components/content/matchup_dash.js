@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import MatchupDashMenu from '../side/matchup_dash_menu'
 import conferenceList from '../../helpers/conference_listings'
+import { fetchUpcomingMatchups } from '../../actions'
 import _ from 'underscore'
 
 class MatchupDash extends Component {
@@ -9,10 +10,14 @@ class MatchupDash extends Component {
     super(props)
   }
 
+  componentWillMount() {
+    this.props.fetchUpcomingMatchups()
+  }
+
   render() {
     return (
       <div className="col-container team-container">
-        <MatchupDashMenu />
+        <MatchupDashMenu matchups={this.props.upcomingMatchups}/>
         <div className="content col matchup-dash-content">
           <header className="matchup-dash-header">
             <span className="matchup-header-text">
@@ -60,4 +65,10 @@ class MatchupDash extends Component {
   }
 }
 
-export default MatchupDash
+function mapStateToProps (state) {
+  return {
+    upcomingMatchups: state.upcomingMatchups
+  }
+}
+
+export default connect(mapStateToProps, {fetchUpcomingMatchups})(MatchupDash)
