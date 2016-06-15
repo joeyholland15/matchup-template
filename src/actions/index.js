@@ -42,9 +42,15 @@ export function setTeamFilter(team) {
 }
 
 export function setPlayerFilter(player) {
-  console.log('dispatched correctly')
   return {
     type: actions.SET_PLAYER_FILTER,
     player
+  }
+}
+
+export function setMatchup(teams) {
+  return {
+    type: actions.SET_MATCHUP,
+    teams
   }
 }

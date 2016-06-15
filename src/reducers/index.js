@@ -5,6 +5,7 @@ import activeConference from './conference_reducer'
 import activeTeam from './team_reducer'
 import activePlayer from './player_reducer'
 import teamRoster from './roster_reducer'
+import matchup from './set_matchup_reducer'
 
 const rootReducer = combineReducers({
   rankings,
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
   activeTeam,
   activePlayer,
   teamRoster,
-  upcomingMatchups
+  upcomingMatchups,
+  matchup
 });
 
 export default rootReducer;

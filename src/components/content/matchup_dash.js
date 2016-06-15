@@ -35,7 +35,9 @@ class MatchupDash extends Component {
                   <input type="text"/>
                 </form>
               </div>
-              <div className="matchup-dash-row matchup-team"></div>
+              <div className="matchup-dash-row matchup-team">
+                {this.props.matchup.away}
+              </div>
             </section>{/*
             */}<section className="matchup-col matchup-versus">
               <div className="matchup-dash-row matchup-select">
@@ -55,7 +57,9 @@ class MatchupDash extends Component {
                   <input type="text"/>
                 </form>
               </div>
-              <div className="matchup-dash-row matchup-team"></div>
+              <div className="matchup-dash-row matchup-team">
+                {this.props.matchup.home}
+              </div>
             </section>
           </div>
           <footer className="matchup-dash-footer">
@@ -67,9 +71,10 @@ class MatchupDash extends Component {
   }
 }
 
-function mapStateToProps (state) {
+const mapStateToProps = (state) => {
   return {
-    upcomingMatchups: state.upcomingMatchups
+    upcomingMatchups: state.upcomingMatchups,
+    matchup: state.matchup
   }
 }
 
