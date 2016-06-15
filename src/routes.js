@@ -13,6 +13,7 @@ import Highlights from './components/content/player_menu/highlights'
 import Notes from './components/content/player_menu/notes'
 import Archive from './components/content/player_menu/archive'
 import PlayerDash from './components/content/player_dash'
+import MatchupDash from './components/content/matchup_dash'
 
 export default (
   <Route path='/' component={App}>
@@ -27,7 +28,7 @@ export default (
     <Route path='player/highlights' component={Highlights} />
     <Route path='player/notes' component={Notes} />
     <Route path='player/archive' component={Archive} />
-    <Route path='matchup' component={Matchup} />
+    <Route path='matchup' component={MatchupDash} />
     <Route path='team' component={Team} />
   </Route>
 )
